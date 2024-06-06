@@ -1,0 +1,111 @@
+body {
+    min-height: 100vh;
+    background-color: mistyrose;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-family: neucha;
+    font-style:italic;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    flex-grow: 1;
+}
+
+#menu section {
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#menu section:not(:first-of-type) {
+    border-left: 1px solid lightgray;
+    border-left: 1px dotted black;
+}
+
+h1 {
+    font-family: nuecha;
+    font-size: 64px;
+    text-align: center;
+    font-style: italic
+}
+
+h2,
+h3,
+footer > :not(.contact) {
+    font-family: nuecha;
+}
+
+section > h2 {
+    text-align: center;
+    border-bottom: 1px dashed gray;
+    font-size: 48px;
+}
+
+.list-group-item > h3 {
+    text-transform: capitalize;
+    color: wheat;
+    font-size: 36px;
+}
+
+.list-group-item img {
+    max-width: 200px;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: gray;
+}
+
+.price {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.price::before {
+    content: '$'
+}
+
+.calories::after {
+    content: ' calories'
+}
+
+footer {
+    margin-top: 1em;
+    border-top: 1px solid lightgray;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav{
+    float:left;
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+}
+p{
+    padding-left:50px;
+    font-family: neucha;
+}
+img{
+    padding-right: 50px;
+}
+.header{
+    background-color: rgb(252, 189, 210);
+    border:wheat dotted;
+    color:maroon;
+    margin-left:50px;
+    margin-right:50px;
+}
